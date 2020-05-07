@@ -78,11 +78,13 @@ border-radius: 12px;
 .sub_section{
 	background-color:#0ABDA0;
   	text-align: center;
+
        box-shadow: 5px 9px 5px 5px#999;
 }
 
 .sub_section{
   animation: prim 50s linear infinite;
+  
 }
 @keyframes prim {
   0%   {background-color:red; left:0px; top:0px;}
@@ -179,8 +181,8 @@ border-radius: 12px;
 .slideshow-container {
  
   position: relative;
-  margin: auto;
-  padding: 20px 5px 5px 5px;
+ 
+  padding: 20px 10px 5px 10px;
 
 }
 
@@ -271,12 +273,11 @@ border-radius: 12px;
   width: auto;
   height: auto;
 
- 
+  /* Center the video */
+  
 }
 
- /* Cente banner */
-	.banner{ padding 0px 5px 0px 5px;
-	}
+
 
 
   /* table */
