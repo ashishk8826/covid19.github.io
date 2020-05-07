@@ -8,8 +8,8 @@
 </head>
 <body onload="fetch()">
 
-<nav class="navbar navbar navbar-light navbar-expand-lg nav_style  p-3"style="color: border: 1px solid green";>
-  <a class="navbar-brand ml-5 py-2 px-2" href="index.php" style="color:white;">COVID-19</a>
+<nav class="navbar navbar navbar-light navbar-expand-lg nav_style  p-3"style="color: border: 1px solid green";><img src="image/logo8.png" style="height: 50px; width: 50px">
+  <a class="navbar-brand ml- py-2 px-2" href="index.php" style="color:white;">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -122,7 +122,7 @@ function showSlides() {
    
         <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-2">
         <div class="rightside w-100 h-100 d-flex justify-content-center align-items-center">
-        <h1 style="color:#BD3E85;">Stay Home, Stay safe & Fight togather Against Corona <span class="corona_rot"><img src="image/corona6.jpg" width="50" height="50"></span> Virus</h1>
+        <h1 style="color:#BD3E85;">Stay Home, Stay safe & Fight togather Against Corona <span class="corona_rot"><img src="image/corona8.png" width="50" height="50"></span> Virus</h1>
           </div>
         </div>
     </div>
@@ -160,11 +160,11 @@ function showSlides() {
 
 
 
-<section class="corona_update container-fluid">
+<section class="corona_update container-fluid" >
   <div class="mt-5 mb-2 ">
-    <h3 class="text-uppercase covupdate text-center ">LAST 5 DAY IN INDIA</h3>
+    <h3 class="text-uppercase covupdate text-center ">COVID-19 IN INDIA</h3>
 </div>
- <div class="table-responsive">
+ <div class="table-responsive" >
   <table class="table table-bordered table-striped text-center" id="tbval">
     <tr>
       
@@ -175,7 +175,7 @@ function showSlides() {
        <th>NEW CASES</th>
        <th>NEW RECOVERED</th>
       <th>NEW DEATHS</th>
-      <th>UPDATED DATE</th>
+     
   
       
     </tr>
@@ -187,7 +187,7 @@ function showSlides() {
     $data = file_get_contents('https://api.covid19india.org/data.json');
     $coronalive=json_decode($data,true);
     $statescount=count($coronalive['cases_time_series']);
-    $i=$statescount-5;
+    $i=$statescount-1;
   while($i < $statescount) {
 
 
@@ -197,37 +197,35 @@ function showSlides() {
 
 
     <tr>
-      <td style="background-color:#C59CDB;color:#fff;
+      <td style=" border: 2px solid black;
  ">
         <?php echo $coronalive['cases_time_series'][$i]['totalconfirmed']?>
       </td>
 
-      <td style="color: #17A589;">
+      <td style="color: #17A589;; border: 2px solid black">
         <?php echo $coronalive['cases_time_series'][$i]['totalrecovered']?>
       </td>
 
 
-      <td style="color: #E82424;">
+      <td style="color: #E82424;; border: 2px solid black">
         <?php echo $coronalive['cases_time_series'][$i]['totaldeceased']?>
       </td>
 
 
-      <td>
+      <td style="border: 2px solid black;">
         <?php echo $coronalive['cases_time_series'][$i]['dailyconfirmed']?>
       </td>
 
 
-      <td>
+      <td style="border: 2px solid black;">
         <?php echo $coronalive['cases_time_series'][$i]['dailyrecovered']?>
       </td>
 
-      <td>
+      <td style="border: 2px solid black;">
         <?php echo $coronalive['cases_time_series'][$i]['dailydeceased']?>
       </td>
 
-      <td>
-        <?php echo $coronalive['cases_time_series'][$i]['date']?>
-      </td>
+     
     </tr>
 <?php
     $i++;
@@ -244,16 +242,21 @@ function showSlides() {
 
 
  <div class="mt-5 mb-2 ">
-    <h3 class="text-uppercase covupdate text-center ">Click on the link below to see the live update</h3>
+    <h3 class="text-uppercase covupdate text-center ">Click on the button below to see the  update</h3>
 </div>
 
+<div style="margin:0px 10px 10px 10px">
+
+  <a href="worldlive.php" class="button"> COUNTRY WISE</a>
+  
 
     <a href="liveindia.php" class="button">INDIAN STATE WISE</a>
 
-  
-    <a href="worldlive.php" class="button"> COUNTRY WISE</a>
-  
 
+  
+    <a href="dailyindia.php" class="button">DAILY CASES IN INDIA</a>
+  
+</div>
 
 
 
@@ -280,12 +283,12 @@ function showSlides() {
 
   
 <div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
-<div class="section_header text-center mb-5 mt-4">
+<div class="section_header text-center mb-5 mt-1">
   <h1>ABOUT COVID-19</h1>
 </div> 
 <div class="row pt-5">
-  <div class="col-lg-5 col-md-6 col-12 ml-1 mr-5">
-   <video width="450" controls>
+  <div class="col-lg-5 col-md-6 col-12 my-0 px-0">
+   <video width ="300px" height="auto" controls>
   <source src="image/coronavideo.mp4" type="video/mp4">
   <source src="mov_bbb.ogg" type="video/ogg">
   Your browser does not support HTML video.
@@ -293,17 +296,17 @@ function showSlides() {
   </div>
   
   <div class="  col-lg-6 col-md-6 col-12">
-    <h2> WHAT IS COVID-19</h2>
+   
     <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
 <p>
 Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
-<p> There are still things we do not know, such as how severe the illness can be, how well it is transmitted between people, and other features of the virus. More information will be provided when it is available.</p>
+
   </div>
   </div>
 </div>
 <!/////////////corona symptoms///////-->
 <div class="container-fluid symptoms pt-5 pb-5" id="sympid">
-<div class="section_header text-center mb-5 mt-4">
+<div class="section_header text-center mb-5 mt-4" >
   <h1>CORONA VIRUS SYMPTOMS</h1>
 </div>
   <div class="container">
@@ -441,7 +444,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
   </div>
 
 <!//////////////contact us///////////-->
-<div class="container-fluid  pt-5 pb-0" id="contactid">
+<div class="container-fluid  pt-5 pb-0 px-0" id="contactid">
 <div class="section_header text-center mb-5 mt-4">
   <h1>CONTACT US</h1>
 </div>
@@ -517,14 +520,19 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
   </div>
 </div>
 
+</div>
 
-<a href="#" class="button my-4 "style="width:200px;height: 50px; margin: 0 40% 0 40%">Swip Up</a>
+<div>
+<a href="#" class="button my-4 mx-5"style="width:200px;height: 50px; margin: auto;">SWYP UP</a>
+
+</div>
+
 
 
 
 
 <div class="banner">
-<a href="https://www.nhp.gov.in"><img src="image/wariors2.jpg" height="200" width="100%"></a>
+<a href="https://www.nhp.gov.in"><img src="image/safety2.jpg" height="200" width="100%"></a>
 </div>
 
 
@@ -571,39 +579,39 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
       var x=tbval.insertRow();
           x.insertCell(0);
           tbval.rows[1].cells[0].innerHTML=data['Global']['TotalConfirmed'];
-          tbval.rows[1].cells[0].style.background='#C59CDB';
-          tbval.rows[1].cells[0].style.color='#fff';
+          tbval.rows[1].cells[0].style.border='2px solid black';
+          tbval.rows[1].cells[0];
 
 
            x.insertCell(1);
           tbval.rows[1].cells[1].innerHTML=data['Global']['NewConfirmed'];
-          tbval.rows[1].cells[1];
+          tbval.rows[1].cells[1].style.border='2px solid black';
           tbval.rows[1].cells[1];
 
 
 
            x.insertCell(2);
           tbval.rows[1].cells[2].innerHTML=data['Global']['TotalDeaths'];
-          tbval.rows[1].cells[2];
+          tbval.rows[1].cells[2].style.border='2px solid black';
           tbval.rows[1].cells[2].style.color='#E82424';
 
 
 
            x.insertCell(3);
           tbval.rows[1].cells[3].innerHTML=data['Global']['NewDeaths'];
-          tbval.rows[1].cells[3];
+          tbval.rows[1].cells[3].style.border='2px solid black';
           tbval.rows[1].cells[3];
 
 
            x.insertCell(4);
           tbval.rows[1].cells[4].innerHTML=data['Global']['TotalRecovered'];
-          tbval.rows[1].cells[4];
+          tbval.rows[1].cells[4].style.border='2px solid black';
           tbval.rows[1].cells[4].style.color='#55D9C0';
 
 
            x.insertCell(5);
           tbval.rows[1].cells[5].innerHTML=data['Global']['NewRecovered'];
-          tbval.rows[1].cells[5];
+          tbval.rows[1].cells[5].style.border='2px solid black';
           tbval.rows[1].cells[5];
 
 
@@ -624,45 +632,4 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
 
 
 
-<?php
-
-
-
-include 'dbcon.php';
-
-if(isset($_POST['submit'])){
-
-  $username=$_POST['username'];
-  $email=$_POST['email'];
-  $mobile=$_POST['mobile'];
-  $symp=$_POST['coronasym'];
-  $addr=$_POST['addr'];
-  $msg=$_POST['msg'];
-
- $chk="";
-  foreach($symp as $chk1){
-  $chk .= $chk1.",";
-}
-  $sql="insert into help(username, email, mobile, symp,addr, message) values('$username','$email','$mobile','$chk','$addr','$msg')";
-
-  $query= mysqli_query($con, $sql);
-  if($query){
- 
- ?>
- <script>
-    alert(" your form submitted successfully 😀 ");
-  </script>
-<?php
-   }
-    else {
-    ?>
-        <script>
-    alert("form not submitted ☹️");
-  </script>
-  <?php 
-   }
-
-}
- 
-?>
 

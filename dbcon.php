@@ -6,13 +6,10 @@ $db='coronadb';
 $con=mysqli_connect($server,$user,$password,$db);
 if($con){
 	
-	
+
 }
 
-else{
+else{ }
 	?>
-	<script>alert("connection failed");
-</script>
-	<?php
-}
-?>
+	
+	

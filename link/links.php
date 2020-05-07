@@ -8,4 +8,4 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/ jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMalijPNOMODHoAtgh/gwFYUNST crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/ jquery.counterup.min.js" integrity=sha256-JtQPj/3xub8oapVMalijPNOMODHoAtgh/gwFYUNST crossorigin="anonymous"></script>

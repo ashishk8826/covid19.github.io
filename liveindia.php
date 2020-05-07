@@ -7,7 +7,7 @@
 </head>
 <body onload="fetch()">
 
-<nav class="navbar navbar navbar-light navbar-expand-lg nav_style  p-3"style="color: border: 1px solid green";>
+<nav class="navbar navbar navbar-light navbar-expand-lg nav_style  p-3"style="color: border: 1px solid green";><img src="image/logo8.png" style="height: 50px; width: 50px">
   <a class="navbar-brand ml-5 py-2 px-2" href="index.php" style="color:white;">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,6 +41,66 @@
 
 
 <!****************corona latest update************-->
+<div class="mt-5">
+    <h3 class="text-uppercase covupdate text-center ">DOWNLOAD NOW!!</h3>
+</div>
+
+
+<div class="slideshow-container mt-2" style="text-align:center;">
+
+<div class="mySlides fade">
+   <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu" ><img src="image/arogyabanner.jpg" style="width:100%; height:350px"></a>
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+ <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu" ><img src="image/arogya3.jpg" style="width:100%; height:350px"></a>
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+   <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu" ><img src="image/arogyabanner1.jpg" style="width:100%; height:350px"></a>
+  
+</div>
+
+
+
+
+
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
 
 
 
@@ -50,11 +110,11 @@
     <h3 class="text-uppercase covupdate text-center ">COVID-19 INDIA LIVE UPDATE</h3>
 </div>
  <div class="table-responsive">
-  <table class="table table-bordered table-striped text-center" id="tbval">
+  <table class="table table-bordered table-striped text-center table-hover" id="tbval">
     <tr>
       
-      <th>STATE</th>
-      <th>TOTAL CASES</th>
+      <th >STATE</th>
+      <th >TOTAL CASES</th>
       <th>TOTAL RECOVERED</th>
       <th>TOTAL DEATHS</th>
        <th>ACTIVE CASES</th>
@@ -77,30 +137,30 @@
 
 
   	<tr>
-  		<td style="background-color:#C59CDB;color:#fff;">
+  		<td style="background-color:#9600FE;border: 2px solid black;color:#fff;">
   			<?php echo $coronalive['statewise'][$i]['state']?>
   		</td>
 
-  		<td>
+  		<td style="border: 2px solid black;">
   			<?php echo $coronalive['statewise'][$i]['confirmed']?>
   		</td>
 
 
-  		<td>
+  		<td style="border: 2px solid black;">
   			<?php echo $coronalive['statewise'][$i]['recovered']?>
   		</td>
 
 
-  		<td style="color: #E82424 ">
+  		<td style="color: #E82424;border: 2px solid black; ">
   			<?php echo $coronalive['statewise'][$i]['deaths']?>
   		</td>
 
 
-  		<td>
+  		<td style="border: 2px solid black;">
   			<?php echo $coronalive['statewise'][$i]['active']?>
   		</td>
 
-  		<td>
+  		<td style="border: 2px solid black;">
   			<?php echo $coronalive['statewise'][$i]['lastupdatedtime']?>
   		</td>
   	</tr>
@@ -114,8 +174,18 @@
  </div>
 </section>
 
-<a href="#" class="button my-4 "style="width:200px;height: 50px; margin: 0 40% 0 40%">Swip Up</a>
+<div>
+<a href="#" class="button my-4 mx-5"style="width:200px;height: 50px; margin: auto;">SWYP UP</a>
 
+</div>
+
+
+<div style="margin:0px 10px 10px 10px">
+
+  <a href="worldlive.php" class="button"> COUNTRY WISE</a>
+    <a href="dailyindia.php" class="button">DAILY CASES IN INDIA</a>
+  
+</div>
 
 
 

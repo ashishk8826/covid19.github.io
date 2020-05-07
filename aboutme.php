@@ -7,7 +7,7 @@
 </head>
 <body onload="fetch()">
 
-<nav class="navbar  navbar-light navbar-expand-lg nav_style  p-3">
+<nav class="navbar  navbar-light navbar-expand-lg nav_style  p-3"><img src="image/logo8.png" style="height: 50px; width: 50px">
   <a class="navbar-brand ml-5 py-2 px-2" href="index.php" style="color:white">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,9 +47,13 @@
   <h3 class="text-uppercase covupdate text-center mt-5 ">ABOUT ME</h3>
 
 
-<p style="color:#ff3300;margin-left: 5%;
-padding: 20px 0 0 20px; ">HELLO EVERYONE!!</p>
 
+<div>
+ 
+  <img src="image/ashishphoto.jpg" style="height: 100px; width: 100px;margin: 0 auto 2px auto;display: block;">
+   <p style="color:#ff3300;margin-left: 5%;
+padding: 20px 0 0 20px; ">HELLO EVERYONE!!</p>
+</div>
 <p style="color:#3399ff;text-align: center;margin:0 5% 0 5%">Hope you all are doing well😊
 My name is Ashish Kumar ,currently i am
 living in NOIDA (INDIA),  I persuing B-tech CSE in 6th sem from Jaypee  institute of information technology.

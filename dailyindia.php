@@ -28,7 +28,7 @@
         <a class="nav-link" href="liveindia.php">INDIA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">WORLD</a>
+        <a class="nav-link" href="worldlive.php">WORLD</a>
       </li>
       
      
@@ -40,35 +40,29 @@
 </nav>
 
 
-
-
-
-
-
-
+<!****************corona latest update************-->
 <div class="mt-5">
-    <h3 class="text-uppercase covupdate text-center ">RESPECT CORONA WARRIORS!!</h3>
+    <h3 class="text-uppercase covupdate text-center ">DONATE NOW IN PM-CARES FUND!!</h3>
 </div>
 
 
 <div class="slideshow-container mt-2" style="text-align:center;">
 
 <div class="mySlides fade">
-   <a href="https://www.nhp.gov.in" ><img src="image/wariors2.jpg"
- style="width:100%; height:350px"></a>
+   <a href="https://www.pmcares.gov.in" ><img src="image/pmcare1.jpg" style="width:100%; height:300px"></a>
  
 </div>
 
 <div class="mySlides fade">
-   <a href="https://www.nhp.gov.in" ><img src="image/wariors1.jpg"
- style="width:100%; height:350px"></a>
+ 
+ <a href="https://www.pmcares.gov.in" ><img src="image/banner1.jpg" style="width:100%; height:300px"></a>
  
 </div>
 
 <div class="mySlides fade">
-   <a href="https://www.nhp.gov.in" ><img src="image/wariors3.jpeg"
- style="width:100%; height:350px"></a>
  
+   <a href="https://www.pmcares.gov.in" ><img src="image/pmcare2.jpg" style="width:100%; height:300px"></a>
+  
 </div>
 
 
@@ -111,24 +105,82 @@ function showSlides() {
 
 
 
-<section class="corona_update container-fluid">
-  <div class="mb-3 mt-5">
-    <h3 class="text-uppercase covupdate text-center ">covid-19 World updates</h3>
+
+
+
+
+
+<section class="corona_update table-responsive container-fluid" >
+  <div class="mt-5 mb-2 ">
+    <h3 class="text-uppercase covupdate text-center ">DAILY CASES IN INDIA</h3>
 </div>
- <div class="table-responsive table-hover">
-  <table class="table table-bordered table-striped text-center table-hover" id="tbval";style="  display:block;height:600px;overflow-y:scroll;">
+ <div class="table-responsive " >
+  <table class="table table-bordered table-hover table-striped text-center" id="tbval">
     <tr>
-     
-      <th >COUNTRY NAME</th>
+      
+      
+      <th>UPDATED DATE</th>
       <th>TOTAL CONFORMED</th>
       <th>TOTAL RECOVERED</th>
-      <th>TOTAL DEATHS</th>
+       <th>TOTAL DEATHS</th>
        <th>NEW CASES</th>
       <th>NEW RECOVERED</th>
       <th>NEW DEATHS</th>
-      <th>UPDATE DATE & TIME</th>
+  
       
     </tr>
+
+    <?php
+
+
+    $data = file_get_contents('https://api.covid19india.org/data.json');
+    $coronalive=json_decode($data,true);
+    $statescount=count($coronalive['cases_time_series']);
+    $i=0;
+  while($i < $statescount) {
+
+
+
+    ?>
+
+    <tr>
+      <td style="background-color:#9600FE;color:#fff; border: 2px solid black;
+ ">
+        <?php echo $coronalive['cases_time_series'][$i]['date']?>
+      </td>
+
+      <td style="color: #E82424; border: 2px solid black">
+        <?php echo $coronalive['cases_time_series'][$i]['totalconfirmed']?>
+      </td>
+
+
+      <td style="color: #17A589; border: 2px solid black">
+        <?php echo $coronalive['cases_time_series'][$i]['totalrecovered']?>
+      </td>
+
+
+      <td style="border: 2px solid black;;color: #E82424;">
+        <?php echo $coronalive['cases_time_series'][$i]['totaldeceased']?>
+      </td>
+
+
+      <td style="border: 2px solid black;">
+        <?php echo $coronalive['cases_time_series'][$i]['dailyconfirmed']?>
+      </td>
+
+      <td style="border: 2px solid black;color: #17A589;">
+        <?php echo $coronalive['cases_time_series'][$i]['dailyrecovered']?>
+      </td>
+
+      <td style="border: 2px solid black;color: #E82424;">
+        <?php echo $coronalive['cases_time_series'][$i]['dailydeceased']?>
+      </td>
+    </tr>
+<?php
+    $i++;
+  }
+?>
+
   </table>
    
  </div>
@@ -141,24 +193,21 @@ function showSlides() {
 
 <div style="margin:0px 10px 10px 10px">
 
- 
+  <a href="worldlive.php" class="button"> COUNTRY WISE</a>
   
 
     <a href="liveindia.php" class="button">INDIAN STATE WISE</a>
-
-
   
-    <a href="dailyindia.php" class="button">DAILY CASES IN INDIA</a>
-  
+   
 </div>
+
+
 
 
 
 <div class="banner">
-<a href="https://www.who.int"><img src="image/banner-covid.jpg" height="200" width="100%"></a>
+<a href="https://www.nhp.gov.in"><img src="image/safety3.jpg" height="200" width="100%"></a>
 </div>
-
-
 
 
 
@@ -170,13 +219,14 @@ function showSlides() {
 <!-////////////////////////fotter/////////-->
 <footer class=" mb-0 ">
   <div class="footer_style text-white text-center container-fluid py-3 ">
-    <p> Copyright By ASHISH KUMAR
+   <p> ©Copyright:2020 ASHISH KUMAR
        </p>
-      <p>Email <a href="https://www.gmail.com/ashishkumarjashwal@gmail.com">👉ashishkumarjashwal@gmail.com</a></p>
+      <p>Email <a href="https://www.gmail.com">👉ashishkumarjashwal@gmail.com</a></p>
   </div>
 
   
 </footer>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
@@ -190,93 +240,6 @@ function showSlides() {
 
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
 
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-
-
-  function fetch(){
-    $.get("https://api.covid19api.com/summary",
-
-      function(data){
-        var tbval=document.getElementById('tbval');
-        for(var i=1; i<(data['Countries'].length);
-          i++){
-          var x=tbval.insertRow();
-          x.insertCell(0);
-          tbval.rows[i].cells[0].innerHTML=data['Countries'][i-1]['Country'];
-          tbval.rows[i].cells[0].style.background='#9600FE';
-          tbval.rows[i].cells[0].style.color='#fff';
-           
-
-
-           x.insertCell(1);
-          tbval.rows[i].cells[1].innerHTML=data['Countries'][i-1]['TotalConfirmed'];
-          tbval.rows[i].cells[1].style.border='2px solid black';
-          tbval.rows[i].cells[1];
-
-
-
-           x.insertCell(2);
-          tbval.rows[i].cells[2].innerHTML=data['Countries'][i-1]['TotalRecovered'];
-          tbval.rows[i].cells[2].style.border='2px solid black';
-          tbval.rows[i].cells[2].style.color=' #17A589';
-
-
-
-           x.insertCell(3);
-          tbval.rows[i].cells[3].innerHTML=data['Countries'][i-1]['TotalDeaths'];
-          tbval.rows[i].cells[3].style.border='2px solid black';
-          tbval.rows[i].cells[3].style.color='#E82424';
-
-
-           x.insertCell(4);
-          tbval.rows[i].cells[4].innerHTML=data['Countries'][i-1]['NewConfirmed'];
-          tbval.rows[i].cells[4].style.border='2px solid black';
-          tbval.rows[i].cells[4];
-
-
-           x.insertCell(5);
-          tbval.rows[i].cells[5].innerHTML=data['Countries'][i-1]['NewRecovered'];
-          tbval.rows[i].cells[5].style.border='2px solid black';
-          tbval.rows[i].cells[5].style.color='#17A589';
-
-
-
-           x.insertCell(6);
-          tbval.rows[i].cells[6].innerHTML=data['Countries'][i-1]['NewDeaths'];
-          tbval.rows[i].cells[6].style.border='2px solid black';
-          tbval.rows[i].cells[6].style.color='#E82424';
-
-
-          x.insertCell(7);
-          tbval.rows[i].cells[7].innerHTML=data['Countries'][i-1]['Date'];
-          tbval.rows[i].cells[7].style.border='2px solid black';
-          tbval.rows[i].cells[7];
-        }
-      }
-
-      );
-
-  }
 </script>
 </body>
 </html>
-
