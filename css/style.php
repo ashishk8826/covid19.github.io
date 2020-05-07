@@ -2,15 +2,22 @@
 html{
 	scroll-behavior: smooth;
 }
+.wholepage{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 *{margin: 0; padding:0; box-sizing: border-box;font-family: 'Muli',sans-serif;}
 .nav_style{
     background-color:#9600FE;
     border: 2px solid green!important;
     width: 100%;
+     box-shadow: 5px 9px 5px 5px#999;
 }
 
+
 .nav_style a:hover {
-  background-color: #17A589;
+  background-color: #99F403;
   color: white;
 
 }
@@ -33,7 +40,7 @@ border-radius: 12px;
 		100%{transform: rotate(360deg);}
 }
 .leftside img{
-		animation: leftimg 50s linear infinite;
+		animation: leftimg 30s linear infinite;
 
 	}
 	@keyframes leftimg {
@@ -43,6 +50,14 @@ border-radius: 12px;
 		
 }
 
+.navbar img{
+    animation:coronalogo  5s linear infinite;
+
+  }
+  @keyframes coronalogo{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
 .covupdate {
 	animation: update 4s linear infinite;
 }
@@ -63,6 +78,7 @@ border-radius: 12px;
 .sub_section{
 	background-color:#0ABDA0;
   	text-align: center;
+       box-shadow: 5px 9px 5px 5px#999;
 }
 
 .sub_section{
@@ -82,6 +98,7 @@ border-radius: 12px;
 
 .mb-5{
 	animation: primg 4s linear infinite;
+
 }
 @keyframes primg {
   0%   {color:red; left:0px; top:0px;}
@@ -94,7 +111,7 @@ border-radius: 12px;
 /*//////////////////////button/////////////*/
 .button {
   background-color: #3498DB; /* Green */
-  border: 1px solid black;
+  border: 2px solid black;
   color: white;
   padding: 16px 32px;
   text-align: center;
@@ -111,11 +128,11 @@ border-radius: 12px;
   display:inline-block;
 
 
-   box-shadow: 0 9px #999;
+   box-shadow: 5px 9px 5px 5px#999;
 }
 
 .button:hover {
-  background-color: #008CBA;
+  background-color: #99F403;
   color: white;
 }
 /*//////////////////////fotter/////////////*/
@@ -156,16 +173,15 @@ border-radius: 12px;
 
 
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
+ 
   position: relative;
   margin: auto;
+  padding-top: 20px;
+
 }
 
 /* Caption text */
@@ -231,6 +247,41 @@ img {vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+.video-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  height: auto; 
+  overflow: hidden;
+
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  
+}
+
+
+
+
+  /* table */
+.table tr th{
+  border: 2px solid black;
+}
 
 
 </style>
