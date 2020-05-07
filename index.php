@@ -140,7 +140,7 @@ function showSlides() {
 </div>
  <div class="table-responsive">
   <table class="table table-bordered table-striped text-center" id="tbval">
-    <tr>
+    <tr style="background-color: #3498DB";>
       
      
       <th>TOTAL CONFORMED </th>
@@ -166,7 +166,7 @@ function showSlides() {
 </div>
  <div class="table-responsive" >
   <table class="table table-bordered table-striped text-center" id="tbval">
-    <tr>
+    <tr style="background-color: #3498DB";>
       
       
       <th>TOTAL CONFORMED</th>
@@ -295,12 +295,12 @@ function showSlides() {
 </video>
   </div>
   
-  <div class="  col-lg-6 col-md-6 col-12">
-   
+  <div class="  col-lg-6 col-md-6 col-12" style="color:white;">
+   <b>
     <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
 <p>
 Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
-
+</b>
   </div>
   </div>
 </div>
@@ -309,49 +309,50 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
 <div class="section_header text-center mb-5 mt-4" >
   <h1>CORONA VIRUS SYMPTOMS</h1>
 </div>
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+   <b> <div class="row">
       <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/breath1.jpg" class="img-fluid" width="120" height="120">
-         <figcaption>DIFFICULTY BREATHING</figcaption>
+         <figcaption style="color:orange;">DIFFICULTY BREATHING</figcaption>
          </figure>
     </div>
 
     <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/fever.png" class="img-fluid" width="120" height="120">
-         <figcaption>FEVER</figcaption>
+         <figcaption style="color:orange;">FEVER</figcaption>
          </figure>
     </div>
 
     <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/tiredness.jpg" class="img-fluid" width="120" height="120">
-         <figcaption>TIREDNESS</figcaption>
+         <figcaption style="color:orange;">TIREDNESS</figcaption>
          </figure>
     </div>
 
     <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/nose2.jpg" class="img-fluid" width="110" height="120">
-         <figcaption>RUNNY NOSE</figcaption>
+         <figcaption style="color:orange;">RUNNY NOSE</figcaption>
          </figure>
     </div>
     <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/cough.png" class="img-fluid" width="120" height="120">
-         <figcaption>COLD</figcaption>
+         <figcaption style="color:orange;">COLD</figcaption>
          </figure>
     </div>
 
     <div class="col-lg-4 col-md-4 mt-5 col-12 ">
         <figure class="text-center">
          <img src="image/cold.png" class="img-fluid" width="120" height="120">
-         <figcaption>DRY COUGH</figcaption>
+         <figcaption style="color:orange; ">DRY COUGH</figcaption>
          </figure>
     </div>
   </div>
+</b>
     
   </div>
 </div>
@@ -360,7 +361,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
 <div class=" container-fluid sub_section pt-5 pb-5" id="preventid">
 <div class="section_header text-center mb-5 mt-4">
   <h1>PREVENTION AGAINST CORONA VIRUS</h1>
-</div>
+</div><b>
     <div class="container">
       <div class="row">
         <div class="coi-lg-4 col-md-4 col-12 mt-0">
@@ -368,7 +369,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
          <img src="image/facemask.jpg" class="img-fluid" width="90" height="90">
          </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-12">
+        <div class="col-lg-8 col-md-8 col-12" style="color:white;">
           <p>Cover your mouth and nose when coughing or sneezing.</p>
          
         </div>
@@ -384,7 +385,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
          <img src="image/handwash.jpg" class="img-fluid" width="90" height="90">
          </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-12">
+        <div class="col-lg-8 col-md-8 col-12" style="color:white;">
           <p>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</p>
          
         </div>
@@ -400,7 +401,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
          <img src="image/precautions1.jpg" class="img-fluid" width="90" height="90">
          </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-12">
+        <div class="col-lg-8 col-md-8 col-12" style="color:white;">
           <p>Maintain at least 6 feet distance between you and people coughing or sneezing.</p>
          
         </div>
@@ -416,7 +417,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
          <img src="image/face_touch.jpg" class="img-fluid" width="90" height="90">
          </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-12">
+        <div class="col-lg-8 col-md-8 col-12" style="color:white;">
           <p>Avoid touching your face.</p>
          
         </div>
@@ -433,15 +434,17 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
          <img src="image/socialdist.jpg" class="img-fluid" width="90" height="90">
          </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-12">
+        <div class="col-lg-8 col-md-8 col-12" style="color:white;">
           <p>Avoid unnecessary travel and staying away from large groups of people.</p>
          
         </div>
       </div>
       
     </div>
+    </b>
 
   </div>
+
 
 <!//////////////contact us///////////-->
 <div class="container-fluid  pt-5 pb-0 px-0" id="contactid">
