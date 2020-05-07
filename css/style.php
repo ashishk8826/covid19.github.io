@@ -180,7 +180,7 @@ border-radius: 12px;
  
   position: relative;
   margin: auto;
-  padding-top: 20px;
+  padding: 20px 5px 5px 5px;
 
 }
 
@@ -271,11 +271,12 @@ border-radius: 12px;
   width: auto;
   height: auto;
 
-  /* Center the video */
-  
+ 
 }
 
-
+ /* Cente banner */
+	.banner{ padding 0px 5px 0px 5px;
+	}
 
 
   /* table */
