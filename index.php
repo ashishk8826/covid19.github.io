@@ -523,7 +523,7 @@ Most people infected with the COVID-19 virus will experience mild to moderate re
 </div>
 
 <div>
-<a href="#" class="button my-4 mx-5"style="width:200px;height: 50px; margin: auto;">SWYP UP</a>
+<a href="#" class="button my-4 mx-5"style="width:200px;height: 50px; margin: auto;">SWIPE UP</a>
 
 </div>
 
