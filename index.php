@@ -23,7 +23,7 @@
         <a class="nav-link" href="#contactid">COVID-HELP<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutme.php">ABOUT US</a>
+        <a class="nav-link" href="#aboutid">ABOUT COVID</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="liveindia.php">INDIA</a>
@@ -143,7 +143,7 @@ function showSlides() {
     <tr style="background-color: #3498DB";>
       
      
-      <th>TOTAL CONFORMED </th>
+      <th>TOTAL CONFIRMED </th>
       <th>NEW CASES</th> 
       <th>TOTAL DEATHS</th>
       <th>NEW DEATHS</th>
@@ -169,7 +169,7 @@ function showSlides() {
     <tr style="background-color: #3498DB";>
       
       
-      <th>TOTAL CONFORMED</th>
+      <th>TOTAL CONFIRMED</th>
       <th>TOTAL RECOVERED</th>
       <th>TOTAL DEATHS</th>
        <th>NEW CASES</th>
