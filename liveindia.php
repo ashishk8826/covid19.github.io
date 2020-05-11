@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>LIVE INDIA</title>
     <?php include 'link/links.php';?>
     <?php include 'css/style.php';?>
 </head>
@@ -22,7 +22,7 @@
         <a class="nav-link" href="#contactid">COVID-HELP<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutme.php">ABOUT US</a>
+        <a class="nav-link" href="#aboutid">ABOUT US</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">INDIA</a>
