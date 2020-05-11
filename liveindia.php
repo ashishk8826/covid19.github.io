@@ -22,7 +22,7 @@
         <a class="nav-link" href="#contactid">COVID-HELP<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#aboutid">ABOUT US</a>
+        <a class="nav-link" href="#aboutid">ABOUT COVID</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">INDIA</a>
