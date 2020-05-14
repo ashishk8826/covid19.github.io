@@ -169,10 +169,10 @@ function showSlides() {
 
 <!-////////////////////////fotter/////////-->
 <footer class=" mb-0 ">
-  <div class="footer_style text-white text-center container-fluid py-3 ">
-    <p> Copyright By ASHISH KUMAR
+  <div class="footer_style text-white text-center container-fluid py-4 " width>
+    <p> © Copyright 2020 the ❤️ Activitizila
        </p>
-      <p>Email <a href="https://www.gmail.com/ashishkumarjashwal@gmail.com">👉ashishkumarjashwal@gmail.com</a></p>
+      
   </div>
 
   
