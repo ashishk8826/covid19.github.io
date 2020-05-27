@@ -19,10 +19,10 @@
         <a class="nav-link" href="index.php">HOME</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#contactid">COVID-HELP<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php#contactid">COVID-HELP<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#aboutid">ABOUT COVID</a>
+        <a class="nav-link" href="index.php#aboutid">ABOUT COVID</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="liveindia.php">INDIA</a>
